@@ -6,4 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".ListExampleActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Spinner example"
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinnerExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="GridView example"
+            android:textColor="#999F00"
+            android:textSize="20sp" />
+
+        <GridView
+            android:id="@+id/gridViewExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:numColumns="4" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="ListView example"
+            android:textColor="#980111"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/listViewExample"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
