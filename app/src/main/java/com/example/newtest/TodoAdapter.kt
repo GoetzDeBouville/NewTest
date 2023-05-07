@@ -7,6 +7,11 @@ import android.widget.CheckBox
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
+data class Todo(
+    val title: String,
+    val isChecked: Boolean
+)
+
 class TodoAdapter (
     var  todos : List<Todo>
 ) : RecyclerView.Adapter<TodoAdapter.TodoViewHolder>(){

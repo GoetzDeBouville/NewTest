@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         val goToListExampoleActivity = findViewById<Button>(R.id.buttonListActivityExample)
         val goToRecycleViewExample = findViewById<Button>(R.id.buttonToRecycleView)
         val goToSecondRecycleView = findViewById<Button>(R.id.buttonToSecondRecycleView)
+        val gotoColorActivity = findViewById<Button>(R.id.BtnToColorActivity)
 
         goToSecondActivityButton.setOnClickListener {
             val message = "New message HERE"
@@ -34,13 +35,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(goToExampleList)
         }
         goToRecycleViewExample.setOnClickListener {
-            val goToReycleView = Intent(this, RecycleViewExampleActivity::class.java)
+            val goToReycleView = Intent(this, CommentRecycleViewExampleActivity::class.java)
             startActivity(goToReycleView)
         }
 
         goToSecondRecycleView.setOnClickListener{
             val toSecondRecycleView = Intent(this, SecondRecycleViewExampleActivity::class.java)
             startActivity(toSecondRecycleView)
+        }
+        gotoColorActivity.setOnClickListener {
+            val toColorActivity = Intent(this, ColorActivity::class.java)
+            startActivity(toColorActivity)
         }
     }
 }

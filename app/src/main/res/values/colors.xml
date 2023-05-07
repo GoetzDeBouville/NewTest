@@ -11,6 +11,15 @@
     <color name="prime_positive">#FF00E409</color>
     <color name="prime_negative">#FFFF0000</color>
     <color name="yellow">#FFC107</color>
-
+    <color name="color1">#ECCED7</color>
+    <color name="color2">#C4BDE3</color>
+    <color name="color3">#EFEAD9</color>
+    <color name="color4">#ECDDCB</color>
+    <color name="color5">#D0D6C2</color>
+    <color name="color6">#DBC4E5</color>
+    <color name="color7">#EFA0A1</color>
+    <color name="color8">#92658C</color>
+    <color name="color9">#AA86AC</color>
+    <color name="color10">#C6ABC8</color>
 
 </resources>
