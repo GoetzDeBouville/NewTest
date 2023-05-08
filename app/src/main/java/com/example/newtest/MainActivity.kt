@@ -15,7 +15,8 @@ class MainActivity : AppCompatActivity() {
         val goToListExampoleActivity = findViewById<Button>(R.id.buttonListActivityExample)
         val goToRecycleViewExample = findViewById<Button>(R.id.buttonToRecycleView)
         val goToSecondRecycleView = findViewById<Button>(R.id.buttonToSecondRecycleView)
-        val gotoColorActivity = findViewById<Button>(R.id.BtnToColorActivity)
+        val goToColorActivity = findViewById<Button>(R.id.BtnToColorActivity)
+        val goToImageViewExampleActivity = findViewById<Button>(R.id.BtnToImageViewExampleActivity)
 
         goToSecondActivityButton.setOnClickListener {
             val message = "New message HERE"
@@ -43,9 +44,14 @@ class MainActivity : AppCompatActivity() {
             val toSecondRecycleView = Intent(this, SecondRecycleViewExampleActivity::class.java)
             startActivity(toSecondRecycleView)
         }
-        gotoColorActivity.setOnClickListener {
+        goToColorActivity.setOnClickListener {
             val toColorActivity = Intent(this, ColorActivity::class.java)
             startActivity(toColorActivity)
+        }
+
+        goToImageViewExampleActivity.setOnClickListener {
+            val toViewHolderActivity = Intent(this, ImageViewExampleActivity::class.java)
+            startActivity(toViewHolderActivity)
         }
     }
 }
