@@ -46,6 +46,11 @@ class PrimeNumsActivity : AppCompatActivity() {
         }
         //добавляем созданный simpleTextWatcher к EditText
         inputEditText.addTextChangedListener(simpleTextWatcher)
+
+        val image = findViewById<ImageView>(R.id.image2)
+        image.setImageDrawable(getDrawable(R.drawable.multy_gradient))
+        image.scaleType = ImageView.ScaleType.CENTER_CROP
+        image.setImageResource(R.drawable.hamster_image)
     }
 
     private fun clearButtonVisibility(s: CharSequence?): Int {
