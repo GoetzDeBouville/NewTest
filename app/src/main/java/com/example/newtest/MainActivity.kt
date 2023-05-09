@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         goToSecondRecycleView.setOnClickListener{
-            val toSecondRecycleView = Intent(this, SecondRecycleViewExampleActivity::class.java)
+            val toSecondRecycleView = Intent(this, RecycleViewExampleActivity::class.java)
             startActivity(toSecondRecycleView)
         }
         goToColorActivity.setOnClickListener {

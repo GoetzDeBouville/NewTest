@@ -3,23 +3,16 @@ package com.example.newtest
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
-import android.widget.CheckBox
 import android.widget.EditText
-import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 
 
-class SecondRecycleViewExampleActivity : AppCompatActivity() {
+class RecycleViewExampleActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_second_recycle_view_example)
+        setContentView(R.layout.activity_recycle_view_example)
 
         var todoList = mutableListOf(
             Todo("Reade the course", false),
