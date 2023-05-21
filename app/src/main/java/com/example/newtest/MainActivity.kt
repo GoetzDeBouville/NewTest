@@ -1,14 +1,23 @@
 package com.example.newtest
 
 import android.content.Intent
+import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.newtest.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        backgroundAnimation()
 
         val goToSecondActivityButton = findViewById<Button>(R.id.buttonToSecondActivity)
         val goToPrimeNums = findViewById<Button>(R.id.buttonToPrimeNums)
@@ -27,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             }
             startActivity(intent)
         }
-        
+
         goToPrimeNums.setOnClickListener {
             val goToPrimes = Intent(this, PrimeNumsActivity::class.java)
             startActivity(goToPrimes)
@@ -42,7 +51,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(goToReycleView)
         }
 
-        goToSecondRecycleView.setOnClickListener{
+        goToSecondRecycleView.setOnClickListener {
             val toSecondRecycleView = Intent(this, RecycleViewExampleActivity::class.java)
             startActivity(toSecondRecycleView)
         }
@@ -63,6 +72,15 @@ class MainActivity : AppCompatActivity() {
         goToForecast.setOnClickListener {
             val goToForecast = Intent(this, ForecastActivity::class.java)
             startActivity(goToForecast)
+        }
+    }
+
+    private fun backgroundAnimation() {
+        val animationDrawable: AnimationDrawable = binding.rlLayout.background as AnimationDrawable
+        animationDrawable.apply {
+            setEnterFadeDuration(1000)
+            setExitFadeDuration(3000)
+            start()
         }
     }
 }
