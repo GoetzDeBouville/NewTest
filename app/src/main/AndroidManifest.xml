@@ -15,6 +15,13 @@
         android:theme="@style/Theme.NewTest"
         tools:targetApi="31">
         <activity
+            android:name=".ForecastActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".GlideTestActivity"
             android:exported="false">
             <meta-data

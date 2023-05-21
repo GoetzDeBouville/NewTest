@@ -72,22 +72,27 @@
             app:layout_constraintTop_toBottomOf="@+id/buttonToRecycleView" />
 
         <Button
-            android:id="@+id/BtnToColorActivity"
+            android:id="@+id/btnToColorActivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="To Color Activity" />
 
         <Button
-            android:id="@+id/BtnToImageViewExampleActivity"
+            android:id="@+id/btnToImageViewExampleActivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="To ViewHolder Activity" />
 
         <Button
-            android:id="@+id/BtnToGlideTestActivity"
+            android:id="@+id/btnToGlideTestActivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="To GlideTest Activity" />
+        <Button
+            android:id="@+id/btnToForecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to forecast"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

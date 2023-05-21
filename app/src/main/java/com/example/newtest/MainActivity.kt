@@ -15,9 +15,10 @@ class MainActivity : AppCompatActivity() {
         val goToListExampoleActivity = findViewById<Button>(R.id.buttonListActivityExample)
         val goToRecycleViewExample = findViewById<Button>(R.id.buttonToRecycleView)
         val goToSecondRecycleView = findViewById<Button>(R.id.buttonToSecondRecycleView)
-        val goToColorActivity = findViewById<Button>(R.id.BtnToColorActivity)
-        val goToImageViewExampleActivity = findViewById<Button>(R.id.BtnToImageViewExampleActivity)
-        val goToGlideTestActivity = findViewById<Button>(R.id.BtnToGlideTestActivity)
+        val goToColorActivity = findViewById<Button>(R.id.btnToColorActivity)
+        val goToImageViewExampleActivity = findViewById<Button>(R.id.btnToImageViewExampleActivity)
+        val goToGlideTestActivity = findViewById<Button>(R.id.btnToGlideTestActivity)
+        val goToForecast = findViewById<Button>(R.id.btnToForecast)
 
         goToSecondActivityButton.setOnClickListener {
             val message = "New message HERE"
@@ -58,6 +59,10 @@ class MainActivity : AppCompatActivity() {
         goToGlideTestActivity.setOnClickListener {
             val toGlideTestActivity = Intent(this, GlideTestActivity::class.java)
             startActivity(toGlideTestActivity)
+        }
+        goToForecast.setOnClickListener {
+            val goToForecast = Intent(this, ForecastActivity::class.java)
+            startActivity(goToForecast)
         }
     }
 }
