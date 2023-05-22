@@ -1,5 +1,6 @@
 package com.example.newtest
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
@@ -12,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -28,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         val goToImageViewExampleActivity = findViewById<Button>(R.id.btnToImageViewExampleActivity)
         val goToGlideTestActivity = findViewById<Button>(R.id.btnToGlideTestActivity)
         val goToForecast = findViewById<Button>(R.id.btnToForecast)
+        val goToNewRecyclerExample = findViewById<Button>(R.id.btnToNewRecyclerExample)
 
         goToSecondActivityButton.setOnClickListener {
             val message = "New message HERE"
@@ -72,6 +75,10 @@ class MainActivity : AppCompatActivity() {
         goToForecast.setOnClickListener {
             val goToForecast = Intent(this, ForecastActivity::class.java)
             startActivity(goToForecast)
+        }
+        goToNewRecyclerExample.setOnClickListener {
+            val goToNewRecyclerExample = Intent(this, NewRecyclerExample::class.java)
+            startActivity(goToNewRecyclerExample)
         }
     }
 
