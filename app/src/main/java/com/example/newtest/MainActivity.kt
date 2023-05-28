@@ -9,6 +9,7 @@ import android.widget.Button
 import com.example.newtest.databinding.ActivityMainBinding
 
 
+@Suppress("NAME_SHADOWING")
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         val goToGlideTestActivity = findViewById<Button>(R.id.btnToGlideTestActivity)
         val goToForecast = findViewById<Button>(R.id.btnToForecast)
         val goToNewRecyclerExample = findViewById<Button>(R.id.btnToNewRecyclerExample)
+        val goToSharedPreferences = findViewById<Button>(R.id.btnToSharedPreferences)
 
         goToSecondActivityButton.setOnClickListener {
             val message = "New message HERE"
@@ -79,6 +81,10 @@ class MainActivity : AppCompatActivity() {
         goToNewRecyclerExample.setOnClickListener {
             val goToNewRecyclerExample = Intent(this, NewRecyclerExample::class.java)
             startActivity(goToNewRecyclerExample)
+        }
+        goToSharedPreferences.setOnClickListener{
+            val goToSharedPreferences = Intent(this, SharedPreferenceesExampleActivity::class.java)
+            startActivity(goToSharedPreferences)
         }
     }
 

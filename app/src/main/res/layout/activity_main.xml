@@ -98,6 +98,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="To New Recycler Example"/>
+
+        <Button
+            android:id="@+id/btnToSharedPreferences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To SharedPreferences"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 </RelativeLayout>
